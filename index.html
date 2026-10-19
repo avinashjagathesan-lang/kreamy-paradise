@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffaf0">
+  <title>Kreamy Paradise | Cafe & Desserts in Chennai</title>
+  <meta name="description" content="Discover waffles, burgers, momos, milkshakes, mojitos and homemade desserts at Kreamy Paradise, Neelankarai, Chennai.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="intro-screen" id="introScreen" aria-label="Welcome to Kreamy Paradise" role="status">
+    <div class="intro-content">
+      <div class="intro-logo" aria-hidden="true">K</div>
+      <p class="intro-kicker">YOUR NEIGHBOURHOOD CAFE</p>
+      <h2>Kreamy <span>Paradise</span></h2>
+      <p class="intro-tagline">A little sweet. A little heaven.</p>
+      <div class="intro-loader" aria-hidden="true"><span></span></div>
+    </div>
+  </div>
+
+  <div class="announcement"><p>Something delicious is waiting for you ✨</p></div>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="#home" aria-label="Kreamy Paradise home">
+        <span class="brand-icon">K</span><span>Kreamy <strong>Paradise</strong></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a><a href="#about">Our Story</a><a href="#menu">Menu</a><a href="#visit">Find Us</a>
+        <a class="nav-cta" href="tel:+919884654374">Call Us ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <span class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEIGHBOURHOOD CAFE</span>
+          <h1>A little sweet.<br>A little <span>heaven.</span></h1>
+          <p class="hero-description">From chocolate-loaded waffles to tasty burgers and chilled milkshakes, find your next favourite treat at Kreamy Paradise.</p>
+          <div class="hero-actions">
+            <a href="#menu" class="button button-dark">Explore the menu <span>↗</span></a>
+            <a href="#visit" class="text-link">Come visit us <span>→</span></a>
+          </div>
+          <div class="hero-meta"><div class="meta-icon">◷</div><div><strong>Open daily</strong><span>10:00 AM – 11:00 PM</span></div></div>
+        </div>
+        <div class="hero-visual" data-reveal>
+          <div class="hero-photo"><img src="falooda-hero.jpg" alt="Chilled falooda with ice cream, jelly, nuts and a cherry" fetchpriority="high"></div>
+          <div class="floating-note"><span class="note-star">✳</span><div><strong>Made for cravings</strong><span>Sweet treats & tasty bites</span></div></div>
+          <div class="hero-sun" aria-hidden="true">✳</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-strip" aria-label="Popular food categories">
+      <div class="container category-grid">
+        <a href="#snacks"><span>🍔</span><strong>Quick Bites</strong></a>
+        <a href="#waffles"><span>🧇</span><strong>Creamy Bay</strong></a>
+        <a href="#momos"><span>🥟</span><strong>Momos</strong></a>
+        <a href="#drinks"><span>🥤</span><strong>Cool Drinks</strong></a>
+        <a href="#desserts"><span>🍰</span><strong>Desserts</strong></a>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual" data-reveal>
+          <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1000&q=85" alt="Fresh sandwich with lettuce, tomato and cheese" loading="lazy">
+          <div class="about-sticker">A happy<br>little place <span>♡</span></div>
+        </div>
+        <div class="about-copy" data-reveal>
+          <span class="eyebrow">A PLACE FOR YOUR CRAVINGS</span>
+          <h2>Good food.<br><span>Better moods.</span></h2>
+          <p>Welcome to Kreamy Paradise in Neelankarai, Chennai. Whether you want a quick snack, a chocolatey dessert or a refreshing drink, there's something to explore on our menu.</p>
+          <p>Bring your cravings, choose your favourites and make your day a little sweeter.</p>
+          <a href="#menu" class="text-link">Find your favourite <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <span class="eyebrow">MADE FOR YOUR MOOD</span>
+          <h2>Something for <span>everyone.</span></h2>
+          <p>Explore our menu and find something you love.</p>
+        </div>
+        <div class="menu-tabs" role="group" aria-label="Filter menu">
+          <button class="filter-button active" data-filter="all" type="button" aria-pressed="true">All items</button>
+          <button class="filter-button" data-filter="snacks" type="button" aria-pressed="false">Quick bites</button>
+          <button class="filter-button" data-filter="waffles" type="button" aria-pressed="false">Creamy Bay</button>
+          <button class="filter-button" data-filter="momos" type="button" aria-pressed="false">Momos</button>
+          <button class="filter-button" data-filter="drinks" type="button" aria-pressed="false">Drinks</button>
+          <button class="filter-button" data-filter="desserts" type="button" aria-pressed="false">Desserts</button>
+          <button class="filter-button" data-filter="combos" type="button" aria-pressed="false">Combos</button>
+        </div>
+
+        <div class="menu-category" id="snacks" data-category="snacks" data-reveal>
+          <div class="category-heading"><div><span class="category-emoji">🍔</span><h3>Snacks & Quick Bites</h3></div><span class="category-caption">For the savoury mood</span></div>
+          <div class="menu-list">
+            <div class="menu-item"><span>Bread Omelette</span><strong>₹40</strong></div>
+            <div class="menu-item"><span>Veg Sandwich</span><strong>₹40</strong></div>
+            <div class="menu-item"><span>Veg Cheese Sandwich</span><strong>₹50</strong></div>
+            <div class="menu-item"><span>Veg Paneer Sandwich</span><strong>₹70</strong></div>
+            <div class="menu-item"><span>Veg Paneer Roll</span><strong>₹60</strong></div>
+            <div class="menu-item"><span>Chicken Roll</span><strong>₹70</strong></div>
+            <div class="menu-item"><span>Veg Cutlet (2 pieces)</span><strong>₹30</strong></div>
+            <div class="menu-item"><span>Potato Cheese Ball</span><strong>₹60</strong></div>
+            <div class="menu-item"><span>Chicken Cutlet (2 pieces)</span><strong>₹40</strong></div>
+            <div class="menu-item"><span>French Fries</span><strong>₹40</strong></div>
+            <div class="menu-item"><span>Chicken Nuggets</span><strong>₹60</strong></div>
+            <div class="menu-item"><span>Chicken Popcorn</span><strong>₹60</strong></div>
+            <div class="menu-item"><span>Veg Patty Burger</span><strong>₹70</strong></div>
+            <div class="menu-item"><span>Chicken Patty Burger</span><strong>₹90</strong></div>
+            <div class="menu-item"><span>Chicken Sandwich</span><strong>₹70</strong></div>
+          </div>
+        </div>
+
+        <div class="menu-category" id="combos" data-category="combos" data-reveal>
+          <div class="category-heading"><div><span class="category-emoji">🎉</span><h3>Combo Offers</h3></div><span class="category-caption">A little more to love</span></div>
+          <div class="menu-list">
+            <div class="menu-item"><span>Three Waffles (Vanilla + Brownie + Red Velvet) + Single Chocolate</span><strong>₹150</strong></div>
+            <div class="menu-item"><span>Chicken Roll + Paneer Roll</span><strong>₹110</strong></div>
+            <div class="menu-item"><span>Chicken Burger + Veg Burger</span><strong>₹140</strong></div>
+            <div class="menu-item"><span>Chicken Burger + French Fries + Mojito</span><strong>₹140</strong></div>
+            <div class="menu-item"><span>Veg Burger + French Fries + Mojito</span><strong>₹120</strong></div>
+            <div class="menu-item"><span>Chicken Burger + French Fries + Milkshake</span><strong>₹160</strong></div>
+            <div class="menu-item"><span>Veg Burger + French Fries + Milkshake</span><strong>₹140</strong></div>
+            <div class="menu-item"><span>Any Two Burgers + Milkshake</span><strong>₹190</strong></div>
+            <div class="menu-item"><span>Any Two Rolls + Milkshake</span><strong>₹170</strong></div>
+          </div>
+        </div>
+
+        <div class="menu-category" id="momos" data-category="momos" data-reveal>
+          <div class="category-heading"><div><span class="category-emoji">🥟</span><h3>Momos & More</h3></div><span class="category-caption">Little bites, big flavour</span></div>
+          <div class="menu-list">
+            <div class="menu-item"><span>Veg Momos (5 pieces)</span><strong>₹60</strong></div>
+            <div class="menu-item"><span>Chicken Momos (5 pieces)</span><strong>₹70</strong></div>
+            <div class="menu-item"><span>Fried Momos (4 pieces)</span><strong>₹80</strong></div>
+            <div class="menu-item"><span>Sweet Corn</span><strong>₹30</strong></div>
+          </div>
+        </div>
+
+        <div class="menu-category" id="waffles" data-category="waffles" data-reveal>
+          <div class="category-heading"><div><span class="category-emoji">🧇</span><h3>Creamy Bay</h3></div><span class="category-caption">Chocolate lovers, this one's for you</span></div>
+          <h4>Vanilla</h4><div class="menu-list">
+            <div class="menu-item"><span>Vanilla with White Chocolate</span><strong>₹50</strong></div><div class="menu-item"><span>Vanilla with Dark Chocolate</span><strong>₹50</strong></div><div class="menu-item"><span>Vanilla with Milk Chocolate</span><strong>₹50</strong></div><div class="menu-item"><span>Vanilla with Triple Chocolate</span><strong>₹60</strong></div>
+          </div>
+          <h4>Brownie</h4><div class="menu-list">
+            <div class="menu-item"><span>Brownie with White Chocolate</span><strong>₹60</strong></div><div class="menu-item"><span>Brownie with Dark Chocolate</span><strong>₹60</strong></div><div class="menu-item"><span>Brownie with Milk Chocolate</span><strong>₹60</strong></div><div class="menu-item"><span>Brownie with Triple Chocolate</span><strong>₹70</strong></div>
+          </div>
+          <h4>Red Velvet</h4><div class="menu-list">
+            <div class="menu-item"><span>Red Velvet with White Chocolate</span><strong>₹60</strong></div><div class="menu-item"><span>Red Velvet with Dark Chocolate</span><strong>₹60</strong></div><div class="menu-item"><span>Red Velvet with Milk Chocolate</span><strong>₹60</strong></div><div class="menu-item"><span>Red Velvet with Triple Chocolate</span><strong>₹70</strong></div>
+          </div>
+        </div>
+
+        <div class="menu-category" id="drinks" data-category="drinks" data-reveal>
+          <div class="category-heading"><div><span class="category-emoji">🥤</span><h3>Chill Zone</h3></div><span class="category-caption">Sip, chill, repeat</span></div>
+          <div class="menu-list">
+            <div class="menu-item"><span>Vanilla Milkshake</span><strong>₹50</strong></div><div class="menu-item"><span>Chocolate Milkshake</span><strong>₹60</strong></div><div class="menu-item"><span>Oreo Milkshake</span><strong>₹60</strong></div><div class="menu-item"><span>Bluemoon Mojito</span><strong>₹40</strong></div><div class="menu-item"><span>Litchi Mojito</span><strong>₹40</strong></div><div class="menu-item"><span>Green Apple Mojito</span><strong>₹40</strong></div><div class="menu-item"><span>Lassi</span><strong>₹30</strong></div><div class="menu-item"><span>Mango Lassi</span><strong>₹40</strong></div><div class="menu-item"><span>Rose Milk</span><strong>₹20</strong></div>
+          </div>
+        </div>
+
+        <div class="menu-category" id="desserts" data-category="desserts" data-reveal>
+          <div class="category-heading"><div><span class="category-emoji">🍰</span><h3>Homemade Desserts</h3></div><span class="category-caption">Save room for something sweet</span></div>
+          <div class="menu-list">
+            <div class="menu-item"><span>Plain Brownie</span><strong>₹40</strong></div><div class="menu-item"><span>Chocolate Brownie</span><strong>₹60</strong></div><div class="menu-item"><span>Triple Chocolate Brownie</span><strong>₹70</strong></div><div class="menu-item"><span>Brownie with Ice Cream</span><strong>₹80</strong></div>
+          </div>
+        </div>
+        <p class="menu-note">Prices and availability may change. An additional ₹5 parcel charge was specified for juice items; please confirm which items it applies to with the cafe.</p>
+      </div>
+    </section>
+
+    <section class="section visit-section" id="visit">
+      <div class="container">
+        <div class="section-heading" data-reveal><span class="eyebrow">YOUR NEXT FAVOURITE STOP</span><h2>Come on <span>over.</span></h2><p>Find us in Neelankarai or call us for enquiries.</p></div>
+        <div class="visit-grid">
+          <article class="info-card" data-reveal><span class="info-icon">📍</span><h3>Find us</h3><p>4/580, Vaithiyalingam Salai,<br>Bharathiyar Nagar, Neelankarai,<br>Chennai, Tamil Nadu 600115</p><a class="card-link" href="https://www.google.com/maps/search/?api=1&query=Kreamy+Paradise+Neelankarai+Chennai" target="_blank" rel="noopener noreferrer">Open Google Maps ↗</a></article>
+          <article class="info-card" data-reveal><span class="info-icon">🕒</span><h3>Opening hours</h3><p>Every day</p><p class="hours"><strong>10:00 AM – 11:00 PM</strong></p><span class="card-muted">Come by for a snack or a sweet treat.</span></article>
+          <article class="info-card" data-reveal><span class="info-icon">📞</span><h3>Give us a call</h3><p>Questions about the menu or orders?</p><a class="phone-number" href="tel:+919884654374">09884654374</a><a class="card-link" href="tel:+919884654374">Call the cafe ↗</a></article>
+          <article class="info-card" data-reveal><span class="info-icon">🛍️</span><h3>Takeaway & delivery</h3><p>Takeaway is listed as available. Call to confirm parcel arrangements, delivery availability in your area and charges.</p><a class="card-link" href="tel:+919884654374">Enquire about orders ↗</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-banner"><div class="container closing-content"><div><span class="eyebrow">A LITTLE TREAT GOES A LONG WAY</span><h2>Your cravings called.</h2><p>Explore the menu and plan your next visit.</p></div><a href="#menu" class="button button-light">Explore the menu ↗</a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner">
+    <a class="brand footer-brand" href="#home"><span class="brand-icon">K</span><span>Kreamy <strong>Paradise</strong></span></a>
+    <p>Sweet treats, tasty bites, happy moments.</p><a href="tel:+919884654374">09884654374</a>
+    <p class="copyright">© <span id="currentYear"></span> Kreamy Paradise. All rights reserved.</p>
+    <p class="demo-note">Demo website concept. Obtain the owner's permission and confirm business details before publishing as the official website.</p>
+  </div></footer>
+</body>
+</html>

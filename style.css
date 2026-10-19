@@ -1,0 +1,144 @@
+:root {
+  --cream:#fffaf0; --paper:#fff; --yellow:#ffd84d; --yellow-light:#fff0b2;
+  --brown:#38251e; --brown-light:#6d5144; --muted:#82756b; --border:#eee4d5;
+  --shadow:0 14px 40px rgba(56,37,30,.07); --radius:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{background:var(--cream);color:var(--brown);font-family:"DM Sans",Arial,sans-serif;line-height:1.65;overflow-x:hidden}
+img{display:block;max-width:100%} a{color:inherit} button{font:inherit}
+.container{width:min(1120px,calc(100% - 40px));margin-inline:auto}
+.section{padding:100px 0}
+.announcement{padding:8px 15px;background:var(--brown);color:#fff;text-align:center;font-size:12px;letter-spacing:.5px}
+.announcement p{margin:0}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(255,250,240,.96);border-bottom:1px solid rgba(238,228,213,.8);backdrop-filter:blur(14px)}
+.navbar{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-size:20px;font-weight:700;letter-spacing:-.7px;white-space:nowrap}
+.brand strong{color:#ad7920}
+.brand-icon{width:39px;height:39px;display:grid;place-items:center;background:var(--yellow);color:var(--brown);border-radius:13px;font-family:"Playfair Display",Georgia,serif;font-size:25px;font-weight:800;transform:rotate(-5deg)}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a{text-decoration:none;font-size:13px;font-weight:600;transition:color .2s ease}
+.nav-links a:hover{color:#ad7920}
+.nav-links .nav-cta{padding:11px 18px;background:var(--brown);color:#fff;border-radius:30px}
+.nav-links .nav-cta:hover{background:#624437;color:#fff}
+.menu-toggle{display:none;border:0;background:var(--yellow);color:var(--brown);width:43px;height:43px;border-radius:13px;font-size:22px;cursor:pointer}
+.hero{padding:76px 0 85px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:65px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;margin-bottom:21px;color:#8a641d;font-size:11px;font-weight:700;letter-spacing:1.8px}
+.eyebrow-dot{width:8px;height:8px;background:#e7ae27;border-radius:50%}
+.hero h1,.about-copy h2,.section-heading h2,.closing-content h2{font-family:"Playfair Display",Georgia,serif;font-weight:800;letter-spacing:-2px;line-height:1.12}
+.hero h1{font-size:clamp(46px,6vw,76px);max-width:600px}
+.hero h1 span,.about-copy h2 span,.section-heading h2 span{color:#b17b20}
+.hero-description{max-width:470px;margin-top:24px;color:var(--muted);font-size:16px;line-height:1.9}
+.hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:24px;margin-top:30px}
+.button{display:inline-flex;justify-content:center;align-items:center;gap:17px;min-height:50px;padding:13px 21px;border-radius:30px;text-decoration:none;font-size:13px;font-weight:700;transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.button:hover{transform:translateY(-3px)}
+.button-dark{background:var(--brown);color:#fff}.button-dark:hover{background:#604537}
+.text-link{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-size:13px;font-weight:700}
+.text-link span{transition:transform .2s ease}.text-link:hover span{transform:translateX(4px)}
+.hero-meta{display:flex;align-items:center;gap:12px;margin-top:43px}
+.meta-icon{width:42px;height:42px;display:grid;place-items:center;background:var(--yellow-light);border-radius:50%;font-size:23px}
+.hero-meta strong,.hero-meta span{display:block}.hero-meta strong{font-size:13px}.hero-meta span{color:var(--muted);font-size:12px}
+.hero-visual{position:relative;min-width:0;padding:8px 10px 25px 5px}
+.hero-photo{height:465px;overflow:hidden;border-radius:48% 48% 24px 24px;background:var(--yellow-light);box-shadow:var(--shadow)}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.floating-note{position:absolute;left:-35px;bottom:0;display:flex;align-items:center;gap:13px;max-width:calc(100% - 20px);padding:16px 20px;background:#fff;border:1px solid var(--border);border-radius:17px;box-shadow:var(--shadow)}
+.note-star{width:42px;height:42px;display:grid;place-items:center;background:var(--yellow);border-radius:13px;font-size:24px}
+.floating-note strong,.floating-note span{display:block}.floating-note strong{font-size:13px}.floating-note div span{color:var(--muted);font-size:11px}
+.hero-sun{position:absolute;top:-16px;right:-8px;z-index:-1;color:#eec84f;font-size:85px}
+.category-strip{padding:24px 0;background:#fff3ce;border-block:1px solid #f2e4bb}
+.category-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.category-grid a{display:flex;align-items:center;justify-content:center;gap:10px;padding:9px;border-radius:12px;text-decoration:none;transition:background .2s ease}
+.category-grid a:hover{background:rgba(255,255,255,.7)}.category-grid a span{font-size:23px}.category-grid strong{font-size:12px}
+.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;align-items:center;gap:90px}
+.about-visual{position:relative;padding:0 22px 22px 0}
+.about-visual::before{position:absolute;content:"";inset:25px 0 0 25px;background:var(--yellow);border-radius:var(--radius)}
+.about-visual img{position:relative;width:100%;height:390px;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}
+.about-sticker{position:absolute;right:-14px;bottom:5px;z-index:1;width:110px;height:110px;display:grid;place-content:center;background:var(--brown);color:#fff;border:5px solid var(--cream);border-radius:50%;text-align:center;font-family:"Playfair Display",Georgia,serif;font-size:16px;line-height:1.2;transform:rotate(8deg)}
+.about-sticker span{color:var(--yellow);font-size:22px}
+.about-copy h2{margin-bottom:22px;font-size:clamp(37px,4vw,51px)}
+.about-copy p{margin-bottom:16px;color:var(--muted);font-size:14px;line-height:1.95}.about-copy .text-link{margin-top:9px}
+.menu-section{background:#fff6df;border-block:1px solid #f1e5c9}
+.section-heading{max-width:650px;margin:0 auto 42px;text-align:center}.section-heading .eyebrow{justify-content:center}
+.section-heading h2{font-size:clamp(36px,4.5vw,54px)}.section-heading>p:last-child{margin-top:15px;color:var(--muted);font-size:14px}
+.menu-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:32px}
+.filter-button{padding:10px 17px;background:#fff;color:var(--brown);border:1px solid var(--border);border-radius:30px;font-size:12px;font-weight:700;cursor:pointer;transition:background .2s ease,color .2s ease}
+.filter-button:hover,.filter-button.active{background:var(--brown);color:#fff;border-color:var(--brown)}
+.menu-category{margin-bottom:24px;padding:29px;background:#fff;border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 8px 25px rgba(56,37,30,.035);scroll-margin-top:100px}
+.category-heading{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:19px;padding-bottom:17px;border-bottom:1px solid var(--border)}
+.category-heading>div{display:flex;align-items:center;gap:12px}
+.category-emoji{width:43px;height:43px;display:grid;place-items:center;background:#fff2c9;border-radius:13px;font-size:23px}
+.category-heading h3{font-family:"Playfair Display",Georgia,serif;font-size:22px;line-height:1.3}
+.category-caption{color:var(--muted);font-size:11px}
+.menu-category h4{margin:23px 0 8px;color:#9b6b20;font-size:13px}
+.menu-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:35px}
+.menu-item{min-width:0;display:flex;align-items:baseline;justify-content:space-between;gap:15px;padding:13px 0;border-bottom:1px dashed #eee4d5}
+.menu-item span{color:#5e4c42;font-size:13px;line-height:1.65}.menu-item strong{flex-shrink:0;color:#98651b;font-size:13px;white-space:nowrap}
+.menu-note{max-width:800px;margin:25px auto 0;color:var(--muted);font-size:11px;line-height:1.8;text-align:center}
+.menu-category[hidden]{display:none!important}
+.visit-section{background:var(--cream)}
+.visit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.info-card{min-width:0;padding:28px;background:#fff;border:1px solid var(--border);border-radius:var(--radius);transition:transform .2s ease,box-shadow .2s ease}
+.info-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.info-icon{width:48px;height:48px;display:grid;place-items:center;margin-bottom:18px;background:#fff1c6;border-radius:15px;font-size:24px}
+.info-card h3{margin-bottom:12px;font-family:"Playfair Display",Georgia,serif;font-size:22px}
+.info-card p{margin-bottom:10px;color:var(--muted);font-size:13px;line-height:1.8;overflow-wrap:anywhere}
+.info-card .hours{color:var(--brown);font-size:17px}.card-link{display:inline-block;margin-top:9px;color:#966619;font-size:12px;font-weight:700;text-decoration:none}.card-link:hover{text-decoration:underline}
+.phone-number{display:block;margin:5px 0;font-size:20px;font-weight:700;text-decoration:none}.card-muted{color:var(--muted);font-size:11px}
+.closing-banner{padding:57px 0;background:var(--yellow)}
+.closing-content{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.closing-content .eyebrow{margin-bottom:9px;color:#624819}.closing-content h2{font-size:clamp(32px,4vw,45px)}
+.closing-content p{margin-top:9px;color:#624f2c;font-size:13px}.button-light{flex-shrink:0;background:#fff;color:var(--brown)}.button-light:hover{background:#fff9e8}
+.site-footer{padding:43px 0 28px;background:var(--brown);color:#fff;text-align:center}
+.footer-inner{display:flex;flex-direction:column;align-items:center;gap:12px}
+.footer-brand{margin-bottom:5px;color:#fff}.footer-brand strong{color:var(--yellow)}
+.site-footer p{color:#d7c8bd;font-size:12px}.site-footer .footer-inner>a:not(.brand){color:var(--yellow);font-size:13px;text-decoration:none}
+.copyright{margin-top:13px}.demo-note{max-width:650px;font-size:10px!important}
+[data-reveal]{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease;transition-delay:var(--reveal-delay,0ms)}
+[data-reveal].is-visible{opacity:1;transform:translateY(0)}
+@media(max-width:900px){
+ .hero-grid{gap:35px}.hero-photo{height:390px}.about-grid{gap:45px}.nav-links{gap:18px}.category-caption{display:none}
+}
+@media(max-width:650px){
+ .container{width:min(calc(100% - 30px),540px)}.section{padding:68px 0}.navbar{min-height:69px}
+ .brand{font-size:18px}.brand-icon{width:35px;height:35px;font-size:22px}
+ .menu-toggle{display:grid;place-items:center}
+ .nav-links{position:absolute;top:calc(100% + 1px);left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:0;padding:12px 20px 20px;background:var(--cream);border-bottom:1px solid var(--border);box-shadow:0 15px 25px rgba(56,37,30,.07)}
+ .nav-links.open{display:flex}.nav-links a{padding:13px 8px}.nav-links .nav-cta{margin-top:8px;text-align:center}
+ .hero{padding:53px 0 65px}.hero-grid{grid-template-columns:1fr;gap:42px}.hero h1{font-size:clamp(43px,12vw,64px);letter-spacing:-1.8px}
+ .hero-description{font-size:14px}.hero-actions{gap:17px}.hero-meta{margin-top:28px}.hero-visual{padding:0 8px 25px}
+ .hero-photo{height:340px;border-radius:42% 42% 22px 22px}.floating-note{left:0;padding:12px 14px}.hero-sun{right:0;font-size:65px}
+ .category-strip{padding:14px 0}.category-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+ .category-grid a{flex-direction:column;gap:2px;padding:9px 3px;text-align:center}.category-grid a span{font-size:22px}.category-grid strong{font-size:10px}
+ .about-grid{grid-template-columns:1fr;gap:42px}.about-visual img{height:310px}.about-copy h2{font-size:43px}
+ .section-heading{margin-bottom:30px}.section-heading h2{font-size:37px;letter-spacing:-1px}
+ .menu-tabs{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;padding:0 0 8px;margin-right:-15px;scrollbar-width:thin}
+ .filter-button{flex-shrink:0}.menu-category{padding:19px 16px;margin-bottom:16px;border-radius:17px}
+ .category-heading{align-items:flex-start}.category-heading h3{font-size:19px}.category-emoji{width:38px;height:38px;font-size:20px}
+ .menu-list{grid-template-columns:1fr}.menu-item{gap:12px;padding:12px 0}.menu-item span,.menu-item strong{font-size:12px}
+ .visit-grid{grid-template-columns:1fr}.info-card{padding:23px}.closing-content{align-items:flex-start;flex-direction:column}
+ .closing-content h2{font-size:36px}.button{min-height:47px}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+ [data-reveal]{opacity:1;transform:none}
+}
+
+
+/* Welcome intro animation */
+body.intro-active{overflow:hidden}
+.intro-screen{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:24px;background:var(--yellow);color:var(--brown);opacity:1;visibility:visible;transition:opacity .7s ease,visibility .7s ease}
+.intro-screen.is-leaving{opacity:0;visibility:hidden;pointer-events:none}
+.intro-content{width:min(100%,420px);text-align:center;animation:intro-arrive .85s cubic-bezier(.2,.75,.25,1) both}
+.intro-logo{display:grid;place-items:center;width:82px;height:82px;margin:0 auto 22px;border:2px solid rgba(69,43,30,.2);border-radius:28px;background:var(--brown);color:var(--yellow);font-family:"Playfair Display",Georgia,serif;font-size:54px;font-weight:800;box-shadow:0 14px 34px rgba(69,43,30,.18);animation:intro-pop .8s .1s cubic-bezier(.2,1.5,.5,1) both}
+.intro-kicker{margin-bottom:9px;font-size:10px;font-weight:800;letter-spacing:3px;animation:intro-rise .65s .22s both}
+.intro-content h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(34px,8vw,48px);line-height:1.1;letter-spacing:-1.5px;animation:intro-rise .65s .32s both}
+.intro-content h2 span{color:#8a5718}
+.intro-tagline{margin-top:13px;color:#6b4d2c;font-size:13px;letter-spacing:.3px;animation:intro-rise .65s .42s both}
+.intro-loader{width:112px;height:3px;margin:30px auto 0;overflow:hidden;border-radius:10px;background:rgba(69,43,30,.16);animation:intro-rise .65s .5s both}
+.intro-loader span{display:block;width:45%;height:100%;border-radius:10px;background:var(--brown);animation:intro-load 1.15s ease-in-out infinite}
+@keyframes intro-arrive{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes intro-pop{from{opacity:0;transform:scale(.55) rotate(-12deg)}to{opacity:1;transform:scale(1) rotate(0)}}
+@keyframes intro-rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes intro-load{from{transform:translateX(-120%)}to{transform:translateX(250%)}}
+@media(prefers-reduced-motion:reduce){.intro-content,.intro-logo,.intro-kicker,.intro-content h2,.intro-tagline,.intro-loader,.intro-loader span{animation:none!important}.intro-screen{transition:none}}
